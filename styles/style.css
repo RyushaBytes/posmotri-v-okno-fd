@@ -63,7 +63,7 @@ ol {
 
 .search-form {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -159,13 +159,14 @@ ol {
   font-size: 18px;
   color: #FFFFFF;
   background: transparent;
-  border: 1px solid #FFFFFF;
+  border: 1px solid currentColor;
   cursor: pointer;
   appearance: none;
 }
 
 .search-form__submit-button {
   padding: 6px 73.5px;
+  align-self: flex-end;
 }
 
 .more-button {
@@ -229,8 +230,7 @@ ol {
   background: #545050;
 }
 
-.content__card-link:hover .content__video-card-title,
-.content__card-link:hover .content__video-card-description {
+.content__card-link:hover {
   text-decoration: underline;
 }
 
